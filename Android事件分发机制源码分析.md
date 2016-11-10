@@ -1,4 +1,4 @@
-#Android事件分发机制源码分析
+﻿#Android事件分发机制源码分析
 [TOC]
 ##Part1:事件来源以及传递顺序
 ###Activity分发事件源码
