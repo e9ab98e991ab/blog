@@ -6,7 +6,7 @@
 1.AccountManager是Android系统提供的账户管理框架，十分强大和方便，可以管理不同类型账户，不同类型AuthenToken
 2.AccountAuthenticator把账户的验证过程、AuthToken的获取过程分离出来，降低程序的耦合性
 3.使用AccountAuthenticator会在"设置"中添加一个账户入口，感觉很酷炫。
-![](https://github.com/wslaimin/blog/account.png)
+![](https://github.com/wslaimin/blog/raw/develop/pics/account.png)
 
 ##AccountManager和Authenticator之间的关系
 AccountManager和Authenticator的方法相对应，比如，AccountManager的addAccount()方法会调用Authenticator的addAccount()方法，Authenticator的方法会返回一个Bundle给AccountManager处理。具体细节后面会介绍。
@@ -403,7 +403,7 @@ private class Response extends IAccountManagerResponse.Stub {
 ```
 
 addAccount流程如图
-![](https://github.com/wslaimin/blog/raw/develop/addAccount.png)[]:http://blog.csdn.net/innost/article/details/47254799
+[![](https://github.com/wslaimin/blog/raw/develop/pics/addAccount.PNG)](http://blog.csdn.net/innost/article/details/47254799)
 
 
 
