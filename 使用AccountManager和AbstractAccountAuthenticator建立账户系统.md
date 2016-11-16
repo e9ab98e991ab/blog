@@ -405,6 +405,11 @@ private class Response extends IAccountManagerResponse.Stub {
 addAccount流程如图
 [![](https://github.com/wslaimin/blog/raw/develop/pics/addAccount.PNG)](http://blog.csdn.net/innost/article/details/47254799)
 
+getAuthToken流程和addAccount流程差不多，可自行分析。
+
+demo地址：
+https://github.com/wslaimin/AccountManagerSample.git
+
 
 
 
