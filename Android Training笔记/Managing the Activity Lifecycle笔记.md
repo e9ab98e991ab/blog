@@ -4,7 +4,7 @@
 后台：Activity切换到别的应用，或切换到另一Activity，此时称Activity进入后台。
 
 #Activity生命周期
-![](https://github.com/wslaimin/blog/raw/master/lifecycle.png)
+![](https://github.com/wslaimin/blog/raw/master/pics/lifecycle.png)
 
 >注意：只有三种状态是可以长时间保持的：resumed、paused、stopped，其他状态都会很快进入下一个状态。
 
