@@ -55,10 +55,13 @@ Activity按照优先级从高到低，可以分为如下三种：
 两者之间是有区别的。首先，优先级上，第二种方式的优先级要高于第一种；在限定范围上有所不同，第一种无法直接为Activity设定FLAG_ACTIVITY_CLEAR_TOP标识，第二种无法为Activity指定singleInstance模式。
 
 Activity的Flags:
-1.FLAG_ACTIVITY_NEW_TASK，为Activity指定“singleTask”启动模式
-2.FLAG_ACTIVITY_SINGLE_TOP，为Activity指定“singleTop”启动模式
+1.FLAG_ACTIVITY_NEW_TASK，通俗点理解，当没有有Activity任务栈时，先创建任务栈。singleTask的意义不是单指一个Activity，而是包含多个Activity的任务的起点的意思。不能用在需要返回结果的Activity。
+2.FLAG_ACTIVITY_SINGLE_TOP，为Activity指定“singleTop”启动模式。和FLAG_ACTIVITY_CLEAR_TOP同时使用等同于"singleTask"启动模式。
 3.FLAG_ACTIVITY_CLEAR_TOP,具有此标记位的Activity，当它启动时，在同一个任务栈中所有位于它上面的Activity都要出栈。和singleTask启动模式一起出现，被启动Activity的实例已经存在，系统会调用它的onNewIntent。被启动Activity采用standard启动模式，它连同它之上的Activity都要出栈，系统会创建新的Activity实例并放入栈顶。
 4.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS，具有这个标记位的Activity不会出现在历史Activity的列表中。等同于在XML中指定android:excludeFromRecents="true"。 
+
+FLAG_ACTIVITY_SINGLE_TOP和FLAG_ACTIVITY_CLEAR_TOP一起使用，Activity不会重新创建，onNewIntent()会调用。
+
 ##IntentFilter的匹配规则
 启动Activity分为显示调用和隐式调用。二者共存的话以显示调用为主。IntentFilter中的过滤信息有action,category,data。
 
