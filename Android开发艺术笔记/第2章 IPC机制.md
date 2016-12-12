@@ -67,7 +67,7 @@ onTransact
 >注意：首先，当客户端发起远程请求时，由于当前线程会被挂起直至服务端进程返回数据，所以如果一个远程方法是很耗时的，那么不能在UI线程中发起此远程请求；其次，由于服务端的Binder方法运行在Binder线程池中，所以Binder方法不管是否耗时都应该采用同步的方式去实现。
 
 Binder的工作机制图：
-![](https://www.github.com/wslaimin/blog/raw/master/binder_jz.jpg)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/binder_jz.jpg)
 
 Binder运行在服务端进程。Binder中提供了两个配对的方法linkToDeath和unlinkToDeath，通过linkToDeath可以给Binder设置一个死亡代理，当Binder死亡时，会收到通知，这个时候就可以重新发起连接请求从而恢复连接。
 
