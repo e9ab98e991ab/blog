@@ -104,4 +104,8 @@ View动画是对View的影像做操作，它并不能真正改变View的位置�
  11. 事件传递过程是由外向内的，即事件总是先传递给父元素，然后再由父元素分发给子View，通过requestDisallowInterceptTouchEvent方法可以在子元素中干预父元素的事件分发过程，但是ACTION_DOWN事件除外。
 
 事件分发源码分析：
+github:
+[事件分发源码分析](https://github.com/wslaimin/blog/blob/chapter_3/Android%E4%BA%8B%E4%BB%B6%E5%88%86%E5%8F%91%E6%9C%BA%E5%88%B6%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90.md)
+csdn:
+[事件分发源码分析](http://blog.csdn.net/ws_lm/article/details/52562711)
 
