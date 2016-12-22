@@ -43,7 +43,7 @@ long highScore = sharedPref.getInt(getString(R.string.saved_high_score), default
 ###内部存储和外部存储
 所有Android设备都有两个文件存储："内部"和"外部"存储。有些设备能够挂载sd卡作为外部存储；有些不能挂载sd卡的设备会把存储分成内部和外部存储，这种外部存储是不能移除的。
 有关手机存储的解释：
-![](https://github.com/wslaimin/blog/raw/master/storage.JPG)
+![](https://github.com/wslaimin/blog/raw/master/pics/storage.JPG)
 
 >提示：尽管app默认安装在内部存储，可以在`<manifest>`标签通过android:installLocation属性选择安装位置。
 
