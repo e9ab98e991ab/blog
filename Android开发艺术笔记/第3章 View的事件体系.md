@@ -64,9 +64,9 @@ public void computeScroll(){
 ##View的滑动
 通过三种方式可以实现View的滑动：第一种是通过View本身提供的scrollTo/scrollBy方法来实现滑动；第二种是通过动画给View施加平移效果来实现滑动；第三种是通过改变View的LayoutParams使得View重新布局从而实现滑动。
 
-mScrollX的值总是等于View左边缘和View内容左边缘在水平方向的距离，而scrollY的值总是等于View上边缘和View内容上边缘在竖直方向的距离。scrollTo和scrollBy只能改变View内容的位置而不能改变View在布局中的位置。
+mScrollX的值不是在View所在坐标系的坐标值，是View向坐标原点(0,0)靠近的值，即mScrollX=0-mLeft。同理，mScrollY=0-mTop。
 
-移动可以理解为以内容为准的坐标系发生了改变。mScrollX和mScrollY的变换规律：
+mScrollX和mScrollY的变换规律：
 ![](https://github.com/wslaimin/blog/raw/master/pics/scroll.jpg)
 
 View动画是对View的影像做操作，它并不能真正改变View的位置参数，包括宽/高，并且如果希望动画后的状态得以保留还必须将fillAfter属性设置为true。补间动画还存在个问题，移动后的影像不能响应事件，原位置仍可以响应事件，属性动画可以解决这个问题。
