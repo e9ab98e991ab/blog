@@ -85,6 +85,29 @@ targetSdkVersion>=11(android3.0)使用activated作为选中状态，因此，tar
 
 >注意：如果child是ViewGroup实例，那么activated状态会向children传递。selected状态也会向下传递。
 
+setAdapter方法会清空mCheckStates。
+
+```java
+@Override
+    public void setAdapter(ListAdapter adapter) {
+        if (adapter != null) {
+            mAdapterHasStableIds = mAdapter.hasStableIds();
+            if (mChoiceMode != CHOICE_MODE_NONE && mAdapterHasStableIds &&
+                    mCheckedIdStates == null) {
+                mCheckedIdStates = new LongSparseArray<Integer>();
+            }
+        }
+
+        if (mCheckStates != null) {
+            mCheckStates.clear();
+        }
+
+        if (mCheckedIdStates != null) {
+            mCheckedIdStates.clear();
+        }
+    }
+```
+
 实现过程十分简单，Demo就不贴了。
 
 
