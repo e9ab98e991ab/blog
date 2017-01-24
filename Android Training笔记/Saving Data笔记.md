@@ -144,7 +144,7 @@ myContext.deleteFile(fileName);
 
 >注意：当卸载app，android系统会删除的文件
  - 所有内部存储的文件。
- - 所有用getExternalFilesDir()存在外部存储文件。
+ - 所有用getExternalFilesDir()存在外部存储文件。getExternalFilesDir()返回的目录为Android/data/data/your_package/
  
 ##在数据库保存数据
 ###定义Scheme和Contract
