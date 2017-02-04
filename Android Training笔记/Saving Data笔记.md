@@ -56,7 +56,7 @@ long highScore = sharedPref.getInt(getString(R.string.saved_high_score), default
 </manifest>
 ```
 
->注意：当前，获取外部存储的写权限，同时也获得了读权限。这在之后的发布版本中可能会修改。最好明确指定 READ_EXTERNAL_STORAGE权限。
+>注意：当前，获取外部存储的写权限，同时也获得了读权限。这在之后的发布版本中可能会修改。最好明确指定 READ_EXTERNAL_STORAGE权限。Android 4.4和之后版本，getExternalFilesDir()方法返回的目录写入不需要WRITE_EXTERNAL_STORAGE权限。
 
 ###在内部存储上保存文件
 获取内部存储目录的两种方法：
