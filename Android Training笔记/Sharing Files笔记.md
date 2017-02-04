@@ -28,7 +28,7 @@
 android:exported表示你的app声明的FileProvider能否被其他app使用。android:resource表示能够分享文件的目录。
 
 指定可以分享的目录：
-在res/xm目录下创建filepaths.xml，在文件中声明目录。`<files-path`>标签，指定内部存储的files目录；类似的还有`<external-path`>、`<cache-path`>标签。代码片段如下：
+在res/xm目录下创建filepaths.xml，在文件中声明目录。`<files-path>`标签，指定内部存储的files目录；类似的还有`<external-path>`、`<cache-path>`标签。代码片段如下：
 
 ```xml
 <paths>
@@ -37,6 +37,7 @@ android:exported表示你的app声明的FileProvider能否被其他app使用。a
 ```
 
 在使用`<external-cache-path>`时，会报错：Caused by: java.lang.IllegalArgumentException: Failed to find configured root that contains /storage/emulated/0/Android/data/com.addcn.car8891/cache/123.txt。这是什么原因？
+原因：FileProvider类支持的标签有`<root-path>`、`<files-path>`、`<cache-path>`、`<external-path>`，并没有`<external-cache-path>`。可能是文档有错误，或是版本没有跟上。
 
 >注意：XML文件是唯一指定分享目录的方式。
 
