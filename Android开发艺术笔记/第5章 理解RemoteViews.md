@@ -186,7 +186,7 @@ AnalogClock、Button、Chronometer、ImageButton、ImageView、ProgressBar、Tex
 RemoteViews的一系列set方法是通过反射来完成的。
 
 RemoteViews实现了parcelable接口，因此它可以跨进程传输。Action代表一个View操作，Action同样实现了Parcelable接口。系统首先将View操作封装到Action对象并将这些对象跨进程传输到远程进程，接着在远程进程中执行Action对象中的具体操作。每调用一次set方法，RemoteViews中就会添加一个对应的Action对象。过程如图：
-![](https://github.com/wslaimin/raw/master/pics/remoteviews.jpg)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/remoteviews.jpg)
 
 远程进程调用RemoteViews的apply或reApply方法来执行Action。apply和reApply的区别在于：apply会加载布局并更新界面，而reapply则只会更新界面。通知栏和桌面小插件在初始化界面时会调用apply方法，而在后续的更新界面时会调用reapply方法。
 
