@@ -48,7 +48,7 @@ t =  ot = ay – ab = y cos(θ) – x sin(θ)
 ![](https://www.github.com/wslaimin/blog/raw/master/pics/zxuanzhuan.png)
 
 由上面的结果可以得出绕Z轴旋转的变换矩阵为：
-![](https://www.github.com/wslaimin/bolg/raw/master/pics/zbianhuan.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/zbianhuan.png)
 
 更多3D旋转矩阵可参考：
 http://blog.csdn.net/zsq306650083/article/details/8773996
@@ -56,7 +56,7 @@ http://blog.csdn.net/zsq306650083/article/details/8773996
 ###变换矩阵在2D平面的表现
 根据绕Z轴旋转的变换矩阵，可以求得旋转后的坐标。θ为绕Z轴旋转角度，P0(x0,y0，1)为旋转前的坐标，P1(x1,y1，1)为旋转后的坐标。
 计算出：
-![](https://www.github.com/wslaimin/bolg/raw/master/pics/x1y1.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/x1y1.png)
 由此可以得到在XOY平面的旋转示意图：
 ![](https://www.github.com/wslaimin/blog/raw/master/pics/xyxuanzhuan.png)
 
