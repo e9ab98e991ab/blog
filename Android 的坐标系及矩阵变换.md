@@ -77,7 +77,7 @@ P0和P1之间的关系：
 ![](https://www.github.com/wslaimin/blog/raw/master/pics/guanxi.png)
 
 P3的坐标:
-![](https://www.github.com/swlaimin/blog/raw/master/pics/p3.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/p3.png)
 
 由于有：
 ![](https://www.github.com/wslaimin/blog/raw/master/pics/chudeng.png)
