@@ -86,7 +86,7 @@ P3的坐标:
 ![](https://www.github.com/wslaimin/blog/raw/master/pics/jieguo.png)
 
 上面是纯数学计算过程，其实通过矩阵的初等变换来更好理解和记忆：
-![](https://www.github.com/wslaimin/bolg/raw/master/pics/koujue.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/koujue.png)
 
 所以，在获得变换矩阵后，如果需要改变中心点坐标，通常会使用下面两行代码：
 
