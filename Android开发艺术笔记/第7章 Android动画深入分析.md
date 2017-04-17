@@ -42,7 +42,7 @@ matrix.preTranslate(centerX,centerY);
 这两行代码的作用是将XY坐标系变换的中心点移到(centerX,centerY)，再移回到(0,0)。
 
 关于更多内容参看文章：
-https://www.github.com/wslaimin/blog/Android坐标系及矩阵变换
+<a href="https://github.com/wslaimin/blog/blob/master/Android%20%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB%E5%8F%8A%E7%9F%A9%E9%98%B5%E5%8F%98%E6%8D%A2.md">Android坐标系及矩阵变换</a>
 
 ###7.1.3帧动画
 帧动画是顺序播放一组预先定义好的图片，类似于电影播放。系统提供了另外一个类AnimationDrawable来使用帧动画，对应`<animation-list>`标签。
