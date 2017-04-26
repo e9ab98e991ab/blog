@@ -114,7 +114,7 @@ private void dispatchTakePictureIntent() {
 }
 ```
 
->注意:getUriForFile(Context,String,File)返回content://URI。app target是Android 7.0(API level 24)或更高，跨包传递file://URI会抛出FileUriExposedException。
+>注意:getUriForFile(Context,String,File)返回content://URI。app target是Android 7.0(API level 24)或更高，跨包传递file://URI会抛出FileUriExposedException。在低版本系統中(測試HTC 4.4.3)使用content://URI不能保存拍照圖片。
 
 在manifest文件配置FileProvider:
 
