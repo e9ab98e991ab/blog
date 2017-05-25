@@ -79,7 +79,7 @@ URI的结构：
 <scheme>://<host>:<port>/[<path>|<pathPrefix>|<pathPattern>]
 ```
 Scheme:URI的模式，如果URI中没有指定scheme，那么整个URI的其他参数无效。
-Host:URI的主机名，如果host未指定，那么整个URI中的其他参数无效。
+Host:URI的主机名，如果host未指定，那么整个URI中的端口和路径部分无效。
 Port：URI的端口号，仅当URI中指定了scheme和host参数时port参数才有意义。
 path,pathPattern和pathPrefix:path表示完整的路径信息；pathPattern也表示完整的路径信息，但是它里面可以包含通配符“*”，“*”表示0个或多个任意字符，需要注意的是，由于正则表达式的规范，如果想表示真实的字符串，那么“*”要写成“\\*”，“\”要写成“\\\\”(不是“\\”吗?);pathPrefix表示路径的前缀信息。
 
