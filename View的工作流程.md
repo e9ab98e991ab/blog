@@ -330,6 +330,9 @@ switch (majorGravity) {
 
 bottom-top表示LinearLayout测量后的高度，mTotalLength是LinearLayout的真实高度，两者可能会不相等，从LinearLayout的onMeasure过程也可以看出来。
 
+##总结
+![](https://github.com/wslaimin/blog/raw/master/pics/measure_flow.png)
+
 
 
 
