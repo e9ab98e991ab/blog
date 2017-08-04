@@ -104,9 +104,7 @@ protected int computeVerticalScrollOffset() {
 从上面三个方法的源码可以获得几个更重要的信息：
 
  - scrollBar的extent，range,offset均是是以item个数来计量的
- - 上面计算的并非scrollBar在屏幕上的实际表现，但是可以以此作为参考系来计算scrollBar在屏幕上的值(两者之间有相同的比例关系)如图：
-
-![](https://www.github.com/wslaimin/blog/raw/master/pics/extent.png)
+ - 上面计算的并非scrollBar在屏幕上的实际表现，但是可以以此作为参考系来计算scrollBar在屏幕上的值(两者之间有相同的比例关系)。
  
 在屏幕上的scrollBar：
 height=getMeasuredHeight()*computeVerticalScrollExtent()/computeVerticalScrollRange()
@@ -117,9 +115,25 @@ offset=computeVerticalScrollOffset()*(getMeasuredHeight()-heigh)/(computeVertica
 
 >为什么offset不等于computeVerticalScrollOffset()/computeVerticalScrollRange()?其实一般情况下，这个算法和上面计算的结果是一样的，但是系统对scrollBar的真实height做了限制，最小值为scrollBar的Drawable的宽度的2倍。(可以参考ScrollBarUtils和ScrollBarDrawable)
 
+对上面的结论来证明下：
+
+```
+size=getMeasuredHeight();
+extent=computeVerticalScrollExtent();
+offset=computeVerticalScrollOffset();
+range=computeVerticalScrollRange();
+thumbHeight=size*extent/range
+
+thumbOffset=offset*(size-(size*extent)/range)/(range-extent)
+=size*(offset/range);
+```
+
+上面的计算是基于thumbHeight=size*extent/range计算得出时，thumbOffset=size*(offset/range)。反之则不成立。
+
 上面是分析算法，项目中的话可以用ScrollBarUtils更方便，也更准确。
 
 附上例子：
+https://github.com/wslaimin/ExtendedListView.git
 
 
 
