@@ -158,6 +158,7 @@ webView.getSettings().setJavaScriptEnabled(true);
 ```
 
 ##WebView设置Cookie
+###方法一
 The CookieSyncManager is used to synchronize the browser cookie store between RAM and permanent storage. To get the best performance, browser cookies are saved in RAM. A separate thread saves the cookies between, driven by a timer.
 To use the CookieSyncManager, the host application has to call the following when the application starts:
 
@@ -185,6 +186,11 @@ CookieSyncManager.getInstance().sync()
 ```
 
 The sync interval is 5 minutes, so you will want to force syncs manually anyway, for instance in onPageFinished(WebView, String). Note that even sync() happens asynchronously, so don't do it just as your activity is shutting down.
+###方法二
+
+```java
+CookieManager.getInstance().setCookie("https://www.test.8891.com.tw","SERVERID=konganxiang;path=/");
+```
 
 ##WebView调用addJavascriptInterface方法的安全问题
 
