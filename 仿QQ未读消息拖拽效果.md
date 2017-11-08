@@ -31,4 +31,7 @@
  7. 回弹动画，使用translationX,translationY属性动画。
  8. 消失动画使用帧动画。
   
+## 完整例子
+
+<a href="https://github.com/wslaimin/QQDotExample.git">demo链接</a>
  
