@@ -4,34 +4,34 @@
 
 ### SimpleNotification
 通知样式：
-![](https://www.github.com/wslaimin/blog/blob/master/pics/simple_notification.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/simple_notification.png)
 ### ProgressNotification
 通知样式：
-![](https://www.github.com/wslaimin/blog/blob/master/pics/progress_notification.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/progress_notification.png)
 ### BigTextNotification
 通知收起时样式：
-![](https://www.github.com/wslaimin/blog/blob/master/pics/big_text_notification_collapsed.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/big_text_notification_collapsed.png)
 通知展开时样式：
-![](https://www.github.com/wslaimin/blog/blob/master/pics/big_text_notification_expanded.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/big_text_notification_expanded.png)
 ### InBoxNotification
 通知收起时样式：
-![](https://www.github.com/wslaimin/blog/blob/master/pics/in_box_notification_collapsed.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/in_box_notification_collapsed.png)
 通知展开时样式：
-![](https://www.github.com/wslaimin/blog/blob/master/pics/in_box_notification_expanded.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/in_box_notification_expanded.png)
 ### BigPictureNotification
 通知收起时样式：
-![](https://www.github.com/wslaimin/blog/blob/master/pics/big_picture_collapsed.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/big_picture_collapsed.png)
 通知展开时样式：
-![](https://www.github.com/wslaimin/blog/blob/master/pics/big_picture_expanded.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/big_picture_expanded.png)
 ### HangUpNotification
 通知样式：
-![](https://www.github.com/wslaimin/blog/blob/master/pics/hang_up_notification.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/hang_up_notification.png)
 ### MediaNotification
 通知样式：
-![](https://www.github.com/wslaimin/blog/blob/master/pics/media_notification.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/media_notification.png)
 ### TemplateNotification
 通知样式：
-![](https://www.github.com/wslaimin/blog/blob/master/pics/template_notification.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/template_notification.png)
 ##设置通知声音、震动
 
 ```java
