@@ -186,3 +186,5 @@ NotificationManager mNotificationManager =
 // passes it to the NotificationManager
 mNotificationManager.notify(id, builder.build());
 ```
+
+<a href="https://github.com/wslaimin/Android-Notification-Style-Demo">示例</a>
