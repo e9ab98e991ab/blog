@@ -32,11 +32,11 @@ adb shell dumpsys meminfo packageName
 
 2. 查看图片大小
 
-![](https://https://www.github.com/wslaimin/blog/raw/master/pics/pic_size.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/pic_size.png)
 
 3. 用GIMP打开*.data，图片类型选择RGB Alpha，填上宽度、高度
 
-![](https://https://www.github.com/wslaimin/blog/raw/master/pics/gimp.png)
+![](https://www.github.com/wslaimin/blog/raw/master/pics/gimp.png)
 
 ## 内存泄漏分析
 
