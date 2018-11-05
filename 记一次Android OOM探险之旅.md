@@ -6,6 +6,14 @@
 
 adb shell dumpsys meminfo packageName
 
+### Dump Java Heap
+
+用Android Studio获取Java Heap文件
+
+![](https://www.github.com/wslaimin/blog/raw/master/pics/dump_heap.png)
+
+用hprof-conv命令转化文件，转化后的文件可以用MAT打开。 
+
 ### MAT使用
 
 [MAT(Memory Analyzer Tool)](http://www.eclipse.org/mat/downloads.php)
