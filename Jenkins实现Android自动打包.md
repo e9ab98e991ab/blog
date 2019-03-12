@@ -45,7 +45,7 @@
 ![](/pics/jenkins_oldcar.jpg)
 
 #### 脚本
-拉取分支，执行Android构建
+拉取分支，执行Android构建<br/>
 build.sh
 
 ```
@@ -93,7 +93,7 @@ fi
 
 ```
 
-Android构建成功,把apk移到指定目录，生成此次构建的json文件，发送RTX通知给测试人员
+Android构建成功,把apk移到指定目录，生成此次构建的json文件，发送RTX通知给测试人员<br/>
 postSuccess.sh
 
 ```
@@ -140,7 +140,7 @@ done
 
 ```
 
-生成json文件
+生成json文件<br/>
 apkJson.sh
 
 ```
@@ -169,7 +169,7 @@ echo "{\"icon\":\"/app/$JOB_NAME/icon.png\",\"name\":\"$JOB_NAME\",\"version\":\
 
 ```
 
-对文本进行解码
+对文本进行解码<br/>
 decode.sh
 
 ```
@@ -179,7 +179,7 @@ urldecode() { : "${*//+/ }"; echo -e "${_//%/\\x}"; }
 
 > 引用其他脚本：source xxx.sh。之后可以使用这个脚本里定义的方法
 
-构建失败，发送通知和邮件给开发人员
+构建失败，发送通知和邮件给开发人员<br/>
 postFailed.sh
 
 ```
@@ -216,18 +216,18 @@ done
 
 如：http://XXX/job/OldCar/buildWithParameters?token=xxxxxx&version=0.0.0&debug=false&message=test
 
-version：用于master分支，值为master当前最新tag
-branchName：用于release或hotfix分支，值为分支名
-version和branchName二选一
-debug：release和hotfix分支为true，master分支为false
-message:commit信息
+1. version：用于master分支，值为master当前最新tag
+2. branchName：用于release或hotfix分支，值为分支名
+3. version和branchName二选一
+4. debug：release和hotfix分支为true，master分支为false
+5. message:commit信息
 
 #### 分支結構
-release和hotfix提交后触发构建
+release和hotfix提交后触发构建<br/>
 ![](/pics/branch.jpg)
 
 ## 注意 
-如果脚本在windows下编写，在mac上可能出现no such file or directory的错误。
+如果脚本在windows下编写，在mac上可能出现no such file or directory的错误。<br/>
 解决方法
 1. vi xxx.sh
 2. set fileformat=unix
